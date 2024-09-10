@@ -12,4 +12,4 @@ sudo yum install git
 git clone https://github.com/SakanaAI/AI-Scientist.git
 cd AI-Scientist
 pip install -r requirements.txt
-///***CRASH***\\\
+///***CRASH***\\\ Out of memeory
