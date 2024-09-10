@@ -8,4 +8,8 @@ changed directory to repository
 conda create -n ai_scientist python=3.11
 conda activate ai_scientist
 sudo yum install texlive *Note this is different from the instructions
-
+sudo yum install git
+git clone https://github.com/SakanaAI/AI-Scientist.git
+cd AI-Scientist
+pip install -r requirements.txt
+///***CRASH***\\\
