@@ -1,2 +1,11 @@
 Sept 10 2024
 using g4ad.xlarge instance in EC2
+That failed. Using a free isntance of unknown kind now
+
+Downloaded miniconda
+Downloaded github repository
+changed directory to repository
+conda create -n ai_scientist python=3.11
+conda activate ai_scientist
+sudo yum install texlive *Note this is different from the instructions
+
