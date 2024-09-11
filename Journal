@@ -13,3 +13,10 @@ git clone https://github.com/SakanaAI/AI-Scientist.git
 cd AI-Scientist
 pip install -r requirements.txt
 ///***CRASH***\\\ Out of memeory
+
+Google colab
+sudo yum install git
+Downloaded github repository
+!apt-get install texlive-full -y
+cd AI-Scientist
+pip install -r requirements.txt
