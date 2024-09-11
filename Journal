@@ -17,7 +17,7 @@ pip install -r requirements.txt
 Google colab
 sudo yum install git
 Downloaded github repository
-!apt-get install texlive-full -y
+!apt-get install texlive-full -y (Do this in colab terminal)
 cd AI-Scientist
 pip install -r requirements.txt
 Restart runtime
