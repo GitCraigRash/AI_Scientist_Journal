@@ -20,3 +20,5 @@ Downloaded github repository
 !apt-get install texlive-full -y
 cd AI-Scientist
 pip install -r requirements.txt
+Restart runtime
+
