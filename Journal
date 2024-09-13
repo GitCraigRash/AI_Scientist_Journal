@@ -26,4 +26,8 @@ from google.colab import userdata
 userdata.get('ANTHROPIC_API_KEY')
 !pip install google-cloud-aiplatform
 !pip install anthropic[vertex]
+Discovered that the terminal and the google colab cells don't always have the same directory.
+I will need to figure out how to run the program without using the terminal. 
+BUT apt-get install texlive-full -y command requires interaction which can only be done in the terminal. 
+Perhaps I need to try to figure out how google cloud works. 
 
