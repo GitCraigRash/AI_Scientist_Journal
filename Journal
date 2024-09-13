@@ -14,20 +14,25 @@ cd AI-Scientist
 pip install -r requirements.txt
 ///***CRASH***\\\ Out of memeory
 
-Google colab
+Google colab T4 GPU
+
+
 !pip install openai
 !apt-get install git
 !git clone https://github.com/SakanaAI/AI-Scientist.git
-apt-get install texlive-full -y (Do this in colab terminal)
-cd AI-Scientist
+apt-get install texlive-full -y (Execute in colab terminal. Hold enter when it get stuck)
+%cd AI-Scientist
 pip install -r requirements.txt
 Restart runtime
+import os
 from google.colab import userdata
-userdata.get('ANTHROPIC_API_KEY')
-!pip install google-cloud-aiplatform
-!pip install anthropic[vertex]
-Discovered that the terminal and the google colab cells don't always have the same directory.
-I will need to figure out how to run the program without using the terminal. 
-BUT apt-get install texlive-full -y command requires interaction which can only be done in the terminal. 
-Perhaps I need to try to figure out how google cloud works. 
+DEEPSEEK_API_KEY = userdata.get('DeepSeek')
+%cd AI-Scientist
+!python data/enwik8/prepare.py
+!python data/shakespeare_char/prepare.py
+!python data/text8/prepare.py
+
+
+
+!cd templates/nanoGPT && python experiment.py --out_dir run_0 && python plot.py
 
