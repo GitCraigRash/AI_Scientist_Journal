@@ -59,4 +59,22 @@ Traceback (most recent call last):
     from pypdf import PdfReader
 ModuleNotFoundError: No module named 'pypdf'
 
+?
+!pip install pypdf
+ModuleNotFoundError: No module named 'pypdf'
+
+???
+!pip install pymupdf
+ModuleNotFoundError: No module named 'pymupdf4llm'
+
+>.< ????
+!pip install pymupdf4llm
+Using GPUs: [0]
+Using OpenAI API with deepseek-coder-v2-0724.
+Traceback (most recent call last):
+  File "/content/AI-Scientist/launch_scientist.py", line 352, in <module>
+    api_key=os.environ["DEEPSEEK_API_KEY"], base_url="https://api.deepseek.com"
+  File "/usr/lib/python3.10/os.py", line 680, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'DEEPSEEK_API_KEY'
 
