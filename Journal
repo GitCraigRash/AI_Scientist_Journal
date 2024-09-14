@@ -48,7 +48,7 @@ ModuleNotFoundError: No module named 'aider.coders'
 
 Peculiar!!! Has the library depreciated? I'll investigate...
 The website
-
+https://aider.chat/docs/troubleshooting/aider-not-found.html
 recommended this solution:
 !python -m pip install aider-chat
 !python -m aider
@@ -58,4 +58,5 @@ Traceback (most recent call last):
   File "/content/AI-Scientist/ai_scientist/perform_review.py", line 4, in <module>
     from pypdf import PdfReader
 ModuleNotFoundError: No module named 'pypdf'
+
 
