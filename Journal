@@ -90,4 +90,78 @@ Changed above code to import os
 from google.colab import userdata
 DEEPSEEK_API_KEY = userdata.get('DEEPSEEK_API_KEY')
 api_key = os.environ["DEEPSEEK_API_KEY"] = DEEPSEEK_API_KEY
+OUTPUT:
+Using GPUs: [0]
+Using OpenAI API with deepseek-coder-v2-0724.
 
+Generating idea 1/2
+Iteration 1/3
+{'Name': 'learned_embeddings', 'Title': 'Exploring Learned Embeddings for Low-Dimensional Diffusion Models', 'Experiment': 'In this experiment, we replace the sinusoidal embeddings in the MLPDenoiser model with learned embeddings. Specifically, we introduce a learnable embedding layer for both the time and input features. We then train the model on the same datasets and compare the performance metrics such as training time, evaluation loss, inference time, and KL divergence. The results will be compared against the baseline model using sinusoidal embeddings to assess the effectiveness of learned embeddings.', 'Interestingness': 7, 'Feasibility': 8, 'Novelty': 6}
+Iteration 2/3
+{'Name': 'learned_embeddings', 'Title': 'Exploring Learned Embeddings for Low-Dimensional Diffusion Models', 'Experiment': 'In this experiment, we replace the sinusoidal embeddings in the MLPDenoiser model with learned embeddings. We introduce a learnable embedding layer for both the time and input features. The learned embeddings will be initialized randomly and updated during training. We will train the model on the same datasets and compare the performance metrics such as training time, evaluation loss, inference time, and KL divergence. Additionally, we will analyze the learned embeddings to understand their characteristics. The results will be compared against the baseline model using sinusoidal embeddings to assess the effectiveness of learned embeddings.', 'Interestingness': 7, 'Feasibility': 8, 'Novelty': 6}
+Iteration 3/3
+{'Name': 'learned_embeddings', 'Title': 'Exploring Learned Embeddings for Low-Dimensional Diffusion Models', 'Experiment': 'In this experiment, we replace the sinusoidal embeddings in the MLPDenoiser model with learned embeddings. We introduce a learnable embedding layer for both the time and input features. The learned embeddings will be initialized randomly and updated during training. We will train the model on the same datasets and compare the performance metrics such as training time, evaluation loss, inference time, and KL divergence. Additionally, we will analyze the learned embeddings to understand their characteristics. The results will be compared against the baseline model using sinusoidal embeddings to assess the effectiveness of learned embeddings.', 'Interestingness': 7, 'Feasibility': 8, 'Novelty': 6}
+Idea generation converged after 3 iterations.
+
+Generating idea 2/2
+Iteration 1/3
+{'Name': 'controllable_generation', 'Title': 'Controllable Generation in Low-Dimensional Diffusion Models', 'Experiment': 'In this experiment, we introduce a control mechanism to bias the generation process of the diffusion model towards different modes of the data. We modify the NoiseScheduler class to accept a control signal, which can be either a learned parameter or a user-specified input. This control signal will influence the noise addition and denoising steps in the diffusion process. We will train the model on the same datasets and evaluate the generated samples based on their alignment with the desired modes. Metrics such as KL divergence and mode coverage will be used to assess the effectiveness of the control mechanism. The results will be compared against the baseline model without control to demonstrate the improvement in controllable generation.', 'Interestingness': 8, 'Feasibility': 7, 'Novelty': 7}
+Iteration 2/3
+{'Name': 'mode_specific_generation', 'Title': 'Mode-Specific Generation in Low-Dimensional Diffusion Models', 'Experiment': 'In this experiment, we introduce a mode-specific control mechanism to bias the generation process of the diffusion model towards different modes of the data. We modify the NoiseScheduler class to accept a control signal, which will be a learned parameter representing the desired mode. This control signal will influence the noise addition and denoising steps in the diffusion process. We will train the model on the same datasets and evaluate the generated samples based on their alignment with the desired modes. Metrics such as KL divergence and mode coverage will be used to assess the effectiveness of the control mechanism. The results will be compared against the baseline model without control to demonstrate the improvement in mode-specific generation.', 'Interestingness': 9, 'Feasibility': 8, 'Novelty': 8}
+Iteration 3/3
+{'Name': 'mode_specific_generation', 'Title': 'Mode-Specific Generation in Low-Dimensional Diffusion Models', 'Experiment': 'In this experiment, we introduce a mode-specific control mechanism to bias the generation process of the diffusion model towards different modes of the data. We modify the NoiseScheduler class to accept a control signal, which will be a learned parameter representing the desired mode. This control signal will influence the noise addition and denoising steps in the diffusion process. We will train the model on the same datasets and evaluate the generated samples based on their alignment with the desired modes. Metrics such as KL divergence and mode coverage will be used to assess the effectiveness of the control mechanism. The results will be compared against the baseline model without control to demonstrate the improvement in mode-specific generation.', 'Interestingness': 9, 'Feasibility': 8, 'Novelty': 8}
+Idea generation converged after 3 iterations.
+
+Checking novelty of idea 0: learning_rate_schedule
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 0.0 seconds after 1 tries calling function search_for_papers at 12:25:59
+Response Status Code: 200
+Response Content: {"total": 3641, "offset": 0, "next": 10, "data": [{"paperId": "ea63924b08e31755cafb9bb261fa6b04c17739b9", "title": "Speed-accuracy trade-off for the diffusion models: Wisdom from nonequilibrium thermodynamics and optimal transport", "abstract": "We discuss a connection between a generative model, called the diffusion model, and nonequilibrium thermodynamics for the Fokker-Planck equation, called stochastic thermodynamics. Based on the techniques of stochastic thermodynamics, we derive the speed-
+Decision made: not novel after round 1
+
+Checking novelty of idea 1: learned_embeddings
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 0.8 seconds after 1 tries calling function search_for_papers at 12:26:18
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 0.4 seconds after 2 tries calling function search_for_papers at 12:26:19
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 1.3 seconds after 3 tries calling function search_for_papers at 12:26:19
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 2.3 seconds after 4 tries calling function search_for_papers at 12:26:21
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 14.1 seconds after 5 tries calling function search_for_papers at 12:26:24
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 20.9 seconds after 6 tries calling function search_for_papers at 12:26:39
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 50.9 seconds after 7 tries calling function search_for_papers at 12:27:00
+Response Status Code: 200
+Response Content: {"total": 16973, "offset": 0, "next": 10, "data": [{"paperId": "f1ba488b092620a655ae48dfcf8fbd8d7e9afbe6", "title": "DiMSam: Diffusion Models as Samplers for Task and Motion Planning under Partial Observability", "abstract": "Task and Motion Planning (TAMP) approaches are effective at planning long-horizon autonomous robot manipulation. However, it can be difficult to apply them to domains where the environment and its dynamics are not fully known. We propose to overcome these limitations by lev
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 0.7 seconds after 1 tries calling function search_for_papers at 12:28:01
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 0.6 seconds after 2 tries calling function search_for_papers at 12:28:02
+
+...
+
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 11.9 seconds after 12 tries calling function search_for_papers at 12:38:33
+Response Status Code: 429
+Response Content: {"message": "Too Many Requests. Please wait and try again or apply for a key for higher rate limits. https://www.semanticscholar.org/product/api#api-key-form", "code": "429"}
+Backing off 1247.6 seconds after 13 tries calling function search_for_papers at 12:38:45
+
+Checking with Semantic Scholar to see if I can get more requests to go through. Their form requires me to tell them what Endpoint I will be using.
+I found this endpoint and am submitting it to their form : https://api.semanticscholar.org/graph/v1/paper/search
+Thank you for your request. We have received your information. Please note that we are currently working
+
+Requesting an API key just in case.
