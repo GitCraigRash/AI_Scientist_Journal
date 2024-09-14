@@ -1,38 +1,50 @@
-Sept 10 2024
-using g4ad.xlarge instance in EC2
-That failed. Using a free isntance of unknown kind now
+Noticed that the set-up for 2d_diffusion was not the actuall paper generating function. 
+trying 
+!conda activate ai_scientist
+!python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment nanoGPT_lite --num-ideas 2
 
-Downloaded miniconda
-Downloaded github repository
-changed directory to repository
-conda create -n ai_scientist python=3.11
-conda activate ai_scientist
-sudo yum install texlive *Note this is different from the instructions
-sudo yum install git
-git clone https://github.com/SakanaAI/AI-Scientist.git
-cd AI-Scientist
-pip install -r requirements.txt
-///***CRASH***\\\ Out of memeory
-
-Google colab T4 GPU
+Error:
+/bin/bash: line 1: conda: command not found
+Traceback (most recent call last):
+  File "/content/AI-Scientist/launch_scientist.py", line 1, in <module>
+    import openai
+ModuleNotFoundError: No module named 'openai'
 
 
-!pip install openai
-!apt-get install git
-!git clone https://github.com/SakanaAI/AI-Scientist.git
-apt-get install texlive-full -y (Execute in colab terminal. Hold enter when it get stuck)
-%cd AI-Scientist
-pip install -r requirements.txt
-Restart runtime
-import os
-from google.colab import userdata
-DEEPSEEK_API_KEY = userdata.get('DeepSeek')
-%cd AI-Scientist
-!python data/enwik8/prepare.py
-!python data/shakespeare_char/prepare.py
-!python data/text8/prepare.py
+pip install openai
+!conda activate ai_scientist
+!python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment nanoGPT_lite --num-ideas 2
+
+Error:
+/bin/bash: line 1: conda: command not found
+Traceback (most recent call last):
+  File "/content/AI-Scientist/launch_scientist.py", line 11, in <module>
+    from aider.coders import Coder
+ModuleNotFoundError: No module named 'aider'
 
 
+Investigating what conda activate ai_scientist does...
+It actives isolated environments. Since Google colab is already an isolated environment ,I will skip this command.
+Also, I noticed it was trying to launch the nanoGTP_lite experiment. I changed it to 2d_diffusion
+!python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment nanoGPT_lite --num-ideas 2
 
-!cd templates/nanoGPT && python experiment.py --out_dir run_0 && python plot.py
+Traceback (most recent call last):
+  File "/content/AI-Scientist/launch_scientist.py", line 11, in <module>
+    from aider.coders import Coder
+ModuleNotFoundError: No module named 'aider'
+
+
+!pip install aider
+Traceback (most recent call last):
+  File "/content/AI-Scientist/launch_scientist.py", line 11, in <module>
+    from aider.coders import Coder
+ModuleNotFoundError: No module named 'aider.coders'
+
+
+!pip install aider
+from aider.coders import Coder
+ModuleNotFoundError: No module named 'aider.coders'
+
+
+Peculiar!!! Has the library depreciated? I'll investigate...
 
