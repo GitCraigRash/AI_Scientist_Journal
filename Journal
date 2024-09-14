@@ -78,3 +78,16 @@ Traceback (most recent call last):
     raise KeyError(key) from None
 KeyError: 'DEEPSEEK_API_KEY'
 
+
+Strangly it cannot access the envitonmental vairables in google colab. 
+import os
+from google.colab import userdata
+DEEPSEEK_API_KEY = userdata.get('DEEPSEEK_API_KEY')
+api_key = os.environ["DEEPSEEK_API_KEY"] = "sk-#####################"
+It started generating ideas...
+
+Changed above code to import os
+from google.colab import userdata
+DEEPSEEK_API_KEY = userdata.get('DEEPSEEK_API_KEY')
+api_key = os.environ["DEEPSEEK_API_KEY"] = DEEPSEEK_API_KEY
+
