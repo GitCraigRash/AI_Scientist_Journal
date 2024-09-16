@@ -14,7 +14,7 @@ cd AI-Scientist
 pip install -r requirements.txt
 ///***CRASH***\\\ Out of memeory
 
-Google colab T4 GPU
+Google colab L4 GPU
 
 
 !pip install openai
