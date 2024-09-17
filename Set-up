@@ -26,11 +26,12 @@ pip install -r requirements.txt
 Restart runtime
 import os
 from google.colab import userdata
-DEEPSEEK_API_KEY = userdata.get('DeepSeek')
+DEEPSEEK_API_KEY = userdata.get('DEEPSEEK_API_KEY')
 %cd AI-Scientist
-!python data/enwik8/prepare.py
-!python data/shakespeare_char/prepare.py
-!python data/text8/prepare.py
+!pip install triton
+!git clone https://github.com/gregversteeg/NPEET.git
+%cd NPEET
+!pip install .
 
 
 
