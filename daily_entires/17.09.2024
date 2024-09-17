@@ -57,6 +57,11 @@ I allocated more cores and video RAM to Ubuntu. It seem to work moderately bette
 7:03pm
 The copy paste commands are unresponsive dispite looking up various ways to operate them. I am typing things manually.
 Installing miniconda so that there is a isolated instance the creators require. Now proceeding to test local install. 
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+HTTP request sent, awaiting reponse ... 404 Not Found
+
+7:18PM
+Semantic Scolar answerd my API request. Testing in Google Colab to see if papers can be generated. 
 
 
 5. Results:
