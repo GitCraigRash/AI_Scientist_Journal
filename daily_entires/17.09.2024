@@ -1,0 +1,65 @@
+Date: 17.09.2024
+Time: 8:41AM EST
+
+1. Goal:
+To use a virutal machine to run AI_scientist locally.
+  
+2. Thought Behind the Goal:
+[Explain why this goal is important, how it aligns with larger objectives, and what you hope to achieve]
+This will likely eliminate roadblocks to generating papers because the developers provided explicit instructions. This speed will help me implement the ai_scientist faster. 
+It will also reduce cost because I would be using my machine instead of google colab compute time. 
+
+
+3. Proposed Process:
+Ask ChatGTP how to intall. 
+Do it. 
+
+4. Actions Taken:
+After asking Chat, it says to use VirtualBox to download and install Linix.
+
+Found a website with instructions: https://medium.com/@thehippieandtheboss/how-to-create-a-linux-virtual-machine-on-macos-1278ec1ef327
+Problem: downloaded the extension pack isntead of the vitual box platform. 
+
+Download successful, checking which type of linux I need for the project...
+Encoutered an error when launching linux system: [ 24.46943] vmugfx 0000:00:02.0: [drm] *ERROR* vmug seems to be running on an unsupported hypervisor. [21.475968] vmugfx 0000:00:02.0 [drm] *ERROR* this configuration is likely broken. [ 23.988796] vmugfx 0000:00:02.0 [drm] *ERROR* Please switch to a supported graphics device to avoid problems.
+
+10:05am
+Chat says this could that Linux is trying to inappropriatly access the graphics card. 
+"Specifically, the vmwgfx error message is related to VMware's graphics drivers, which Ubuntu might be trying to use inappropriately inside VirtualBox."
+It then suggested several options to fix the problem. I will start with Switch to a Different Graphics Controller.
+
+10:12am
+Linux randomly started working. ????
+However, the insructions I was following do no display this screen. Ubuntu also cannot find the internet.
+10:30am
+After fiddling for a bit, it seemed wifi was unnecessary? Perhaps it connects to the host computer? Problem done. 
+
+10:32am
+Download seems to have slowed or stopped. I will wait a bit longer...
+10:40am
+Determined Ubuntu was frozen. Restarting Virtual Machine now...
+11:02am
+Update. Loading has proceeded further than before...
+11:21am
+Appears to have frozen much later in the downloading process. Investigating to see if it needs more memory space...
+11:35am
+Looked the problem up on overstack and found advice to use "safe graphics" installation installation mode. trying now.
+12:09am
+The download progressed further, but unfortunatly froze again...
+Added memomory and video memory.
+1:20pm
+Ubuntu finally downloaded.
+
+5:54pm
+Starting to use the Ubuntu operating system with Virtual box. It's painfully slow and does not seem to be able to copy and paste. 
+I allocated more cores and video RAM to Ubuntu. It seem to work moderately better.
+
+7:03pm
+The copy paste commands are unresponsive dispite looking up various ways to operate them. I am typing things manually.
+Installing miniconda so that there is a isolated instance the creators require. Now proceeding to test local install. 
+
+
+5. Results:
+[Detail the outcomes or results from the actions, any progress made, or challenges faced]
+6. Next Steps:
+[Optional: Outline what you plan to do next, based on the current progress or results]
