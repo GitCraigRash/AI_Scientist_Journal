@@ -62,6 +62,20 @@ HTTP request sent, awaiting reponse ... 404 Not Found
 
 7:18PM
 Semantic Scolar answerd my API request. Testing in Google Colab to see if papers can be generated. 
+Switched back to google colab to see if the APi works. 
+Unfortunatly results are mostly the same, but there are new messages saying if the idea was found novel or not. 
+I am going to modify the code to wait more than one second before searching again. 
+
+8:14PM
+The program sucessfully checks if the papers are on semantic scholar! but now it's failing because it cannot find a specific file. 
+"""Processing idea: controllable_generation
+Failed to evaluate idea controllable_generation: [Errno 2] No such file or directory: 'templates/2d_diffusion/run_0/final_info.json'
+All ideas evaluated."""
+The code is asking: """assert not osp.exists(folder_name), f"Folder {folder_name} already exists." """
+But instead of creating the file, the program goes simply says failed to evaluate. Implying that the final_results.json should already exist. 
+
+9:10pm
+Been looking into how to change the code so that the program detects Colab is being used and uses the proper commands to create a new file. 
 
 
 5. Results:
