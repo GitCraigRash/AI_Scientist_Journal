@@ -79,6 +79,7 @@ Been looking into how to change the code so that the program detects Colab is be
 
 
 5. Results:
-[Detail the outcomes or results from the actions, any progress made, or challenges faced]
+With the Semantic Scholar API secure, I am further than I have been before. The program generates ideas and evaluates there novalty. Sadly it cannot document the final results.  The current obstical is how the program tries to create new directories and files in a way not supported by Google colab. My instinct is to modify the code to support Colab, but a cleaner solution may be to use Amazon Bedrock. The local alternative, using Ubuntu on a Virtual box on my machine, is computationally taxing on my Macbook Air and on my sainity(no copy/paste). I am further conserned that the instructions require NVIDEA graphics cards which my Macbook does not have.   
+
 6. Next Steps:
-[Optional: Outline what you plan to do next, based on the current progress or results]
+I hope to 1. Request Amazon AWS for access to more CPUs 2. Testing if modifying the source code will yeild results on Colab.  
