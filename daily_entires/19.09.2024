@@ -1,3 +1,30 @@
+Date: 17.09.2024
+Time: N/A
+
+1. Goal:
 I want to try to use AWS to do the program because it seems like google colab's file system is incompatable with the ai_scientist. 
 
-When launching an AWS instance, It says that I  do not have permission to launch a g type instance with more than zero CPU. So I submitted a request for more. Switching back to getting colab to work. 
+  
+2. Thought Behind the Goal:
+When launching an AWS instance, It says that I  do not have permission to launch a g type instance with more than zero CPU. 
+
+
+3. Proposed Process:
+I will request AWS for permission for more CPUs.
+
+4. Actions Taken:
+I submitted a request for more. Switching back to getting colab to work. 
+
+Reviewed ai_scientist code to find out why it cannot locate final_info.json file. 
+
+
+
+5. Results:
+Still waiting for a response from AWS for an increase to CPU limit. 
+
+I discovered that the experiment.py file generates the final_info.json file. What I do not understand is why this action come after the program performs an assert statement to see if the file exists. if the assert fails, and the program skips the the except block, it will never generate the final_info file!
+I will need to learn more.
+
+
+6. Next Steps:
+  1. Reach out to a freind, Nick , who may know how to use AWS services. Fruther investigate ai_scientist code to determine how to avoid the file not found error. 
