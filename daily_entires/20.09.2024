@@ -82,7 +82,8 @@ for file_name in file_names:
         
     print(f"File '{file_name}' created in folder '{folder_name}'.")
 
-
+## Idea
+Just remove the assert statement.
 
 
 5. Results:
