@@ -59,6 +59,29 @@ if __name__ == "__main__":
     main()
 ###
 It ran perfectly. 
+So then I asked chat to write code that creates folders with files inside. 
+It also worked perfectly:
+import os
+
+# Define folder and file names
+folder_name = 'MyFolder'
+file_names = ['file1.txt', 'file2.txt', 'file3.txt']
+
+# Create the folder if it doesn't exist
+if not os.path.exists(folder_name):
+    os.makedirs(folder_name)
+    print(f"Folder '{folder_name}' created successfully!")
+
+# Create the files inside the folder
+for file_name in file_names:
+    file_path = os.path.join(folder_name, file_name)
+    
+    # Open the file in write mode and add some content
+    with open(file_path, 'w') as file:
+        file.write(f"This is {file_name}.\n")
+        
+    print(f"File '{file_name}' created in folder '{folder_name}'.")
+
 
 
 
