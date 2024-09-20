@@ -1,1 +1,63 @@
-s
+Date: 20.09.2024
+Time: 7:31AM EST
+
+1. Goal:
+Use print() statements to understand what paths the program is taking. Thsi will help me discover exactly why the file path finder is not working. First though, I want to test if the file finding system in google colab works as expected. 
+  
+2. Thought Behind the Goal:
+I want to improve speed by improving understanding. Even though this path does not end up working, I can still transfer my understanding of the program to other methods. 
+
+3. Proposed Process:
+to better understand the folder finding system in ai_scientist, I will first create a micro scenario for testing.
+
+4. Actions Taken:
+I asked Chat to generate two python files, main_script and target_script.py to test if command lines generated in main_script.py could be used to activate target_script.py
+###main_script.py###
+import subprocess
+
+def run_target_script(flag1_value, flag2_value):
+    """Executes target_script.py with flags."""
+    command = ['python', 'target_script.py', '--flag1', flag1_value, '--flag2', flag2_value]
+    
+    # Run the command
+    result = subprocess.run(command, capture_output=True, text=True)
+    
+    # Print the output of target_script.py
+    print(result.stdout)
+
+if __name__ == "__main__":
+    # Modify the flags here
+    flag1 = "hello"
+    flag2 = "world"
+    
+    run_target_script(flag1, flag2)
+
+
+###target_script.py###
+import argparse
+
+def main():
+    # Create an argument parser
+    parser = argparse.ArgumentParser(description="Process some flags.")
+    
+    # Define the two flags
+    parser.add_argument('--flag1', type=str, required=True, help="The first flag")
+    parser.add_argument('--flag2', type=str, required=True, help="The second flag")
+    
+    # Parse the arguments
+    args = parser.parse_args()
+    
+    # Modify behavior based on the flags
+    print(f"Flag 1 value: {args.flag1}")
+    print(f"Flag 2 value: {args.flag2}")
+    print(f"Combined: {args.flag1} {args.flag2}")
+
+if __name__ == "__main__":
+    main()
+
+###
+
+
+5. Results:
+
+6. Next Steps:
