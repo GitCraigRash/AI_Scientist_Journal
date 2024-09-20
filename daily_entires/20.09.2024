@@ -11,6 +11,9 @@ I want to improve speed by improving understanding. Even though this path does n
 to better understand the folder finding system in ai_scientist, I will first create a micro scenario for testing.
 
 4. Actions Taken:
+Asked chat to generate code to look for files above across and below the current python file. It worked successfully.
+
+
 I asked Chat to generate two python files, main_script and target_script.py to test if command lines generated in main_script.py could be used to activate target_script.py
 ###main_script.py###
 import subprocess
