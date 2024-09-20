@@ -82,9 +82,9 @@ for file_name in file_names:
         
     print(f"File '{file_name}' created in folder '{folder_name}'.")
 
-## Idea
+## Ideas
 Just remove the assert statement.
-
+Add Print statement of file_name before assert statement to help diagnose
 
 5. Results:
 
