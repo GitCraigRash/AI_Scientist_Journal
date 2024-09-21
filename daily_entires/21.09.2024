@@ -33,6 +33,8 @@ Surpsingly, I could not find any good videos about setting up an AI in Amazon Be
 9:04am
 Found some videos on how to run Amazon Bedrock, and its very confusing because A) it does not use the command line at all, 2. It 
 
+9:56am
+It seems like bedrock does not use command lines at all. Which seems to contradict the set-up instructions for AI_Scientist. How do they expect me to store the program's files in this way?
 
 
 5. Results:
