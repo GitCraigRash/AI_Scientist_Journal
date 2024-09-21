@@ -1,4 +1,33 @@
+
+
+
+Date: 21.09.2024
+Time: ~6:40am
+
 1. Goal
 Activate and run AI_Scientist on Amazon Web Service.
+  
+2. Thought Behind the Goal:
+I received an email from AWS that my instance increase has been approved. However, when I tried to activate it I found there to be many additional options and steps I needed to complete before I could access the terminal. However, when I finally got to try the code, the computer did not recongize any of the commands. I could not get the cloud instance to run anything. This problem will need to be fixed if I am to run AWS.
 
 
+3. Proposed Process:
+To watch some tutuorial videos on launching an instance. 
+Launch the instance and run the code. 
+
+4. Actions Taken:
+6:45am
+I watched two videos about what VPC's, target groups, and load balancers. 
+In the end, I discovered they were completely unnessessary to what I need. 
+However, in the process I discovered that the instance I launched was the wrong type.
+~7:00
+I attempted to launch the correct isntance, but it failed. The vCPU limit had not been increased. 
+7:20am
+Asked chat how to increase the limit, and it pointed me to a URL which I used to find the quota increase form. This was different than the previous method I have been asking for increases. 
+Chat said the process could take a few minutes to a few hours. 
+Meanwhile, I will watch more tutorials for AWS. I think this will be more productive than scanning the source code.
+
+5. Results:
+
+
+6. Next Steps:
