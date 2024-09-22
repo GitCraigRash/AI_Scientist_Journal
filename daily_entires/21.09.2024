@@ -86,6 +86,25 @@ zbZL1s-pBF.txt
 zaALYtvbRlH.txt
 zz9hXVhf40.txt
 
+I am going on the assumption that these papers are generated. I am now trying to download them. Chat is proposing a seemingly complicated way:
+scp -i /path/to/your/key.pem ec2-user@<instance-ip>:/path/to/remote/file /path/to/local/destination
+Where the files are sent via the .ssh key, the path to the user's(me) instance, the path to the target file, and the path to the destination on the local machine. 
+My difficulty is knowing what each of these are. Finding them now. 
+
+.pem file:
+/Users/craigrashjr/Downloads/AI_SCI_10.pem
+path to target:
+/root/miniconda3/AI-Scientist/review_iclr_bench/iclr_parsed/zz9hXVhf40.txt
+Public IP address:
+3.238.127.110
+Path to destination:
+/Users/craigrashjr/Downloads/zz9hXVhf40.txt
+
+10:50pm
+Spent an aggregious amount of time trying to use to terminal to download the files to my computer. I was trying to avoid compying them by hand because the termianl keeps trunkating them. No success. Copy/paste might have been faster!
+
+
+
 5. Results:
 
 
