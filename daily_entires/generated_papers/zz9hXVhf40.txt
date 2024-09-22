@@ -1,0 +1,119 @@
+# REVISITING DESIGN CHOICES IN OFFLINE MODEL-BASED REINFORCEMENT LEARNING
+
+**Cong Lu[∗], Philip J. Ball[∗], Jack Parker-Holder, Michael A. Osborne, Stephen J. Roberts**
+Department of Engineering
+University of Oxford
+
+ABSTRACT
+
+Offline reinforcement learning enables agents to leverage large pre-collected
+datasets of environment transitions to learn control policies, circumventing the
+need for potentially expensive or unsafe online data collection. Significant progress
+has been made recently in offline model-based reinforcement learning, approaches
+which leverage a learned dynamics model. This typically involves constructing a
+probabilistic model, and using the model uncertainty to penalize rewards where
+there is insufficient data, solving for a pessimistic MDP that lower bounds the
+true MDP. Existing methods, however, exhibit a breakdown between theory and
+practice, whereby pessimistic return ought to be bounded by the total variation
+_distance of the model from the true dynamics, but is instead implemented through a_
+penalty based on estimated model uncertainty. This has spawned a variety of uncertainty heuristics, with $
+paper, we compare these heuristics, and design novel protocols to investigate their
+interaction with other hyperparameters, such as the number of models, or imaginary
+rollout horizon. Using these insights, we show that selecting these key hyperparameters using Bayesian Op$
+different to those currently used in existing hand-tuned state-of-the-art methods,
+and result in drastically stronger performance.
+
+1 INTRODUCTION
+
+In offline (or batch) reinforcement learning (RL) (Ernst et al., 2005; Levine et al., 2020), the goal is
+to leverage offline datasets of transitions in an environment to train a policy that transfers to an onli$
+task. This could have vast implications for using RL in real-world settings, as agents can make use
+of ever-increasing amounts of data without the need for an accurate simulator, while also avoiding
+expensive and potentially even unsafe exploration in the environment.
+
+
+Model-based reinforcement learning (MBRL) has recently shown promise in this paradigm, obtaining
+state-of-the-art performance on offline RL benchmarks (Kidambi et al., 2020; Yu et al., 2021),
+improving upon powerful model-free approaches (e.g. Kumar et al. (2020)). MBRL works by
+training a dynamics model from the offline data, then optimizing a policy using imaginary rollouts
+from the model. This allows the agent to learn from on-policy experience, as the model is agnostic
+to the policy used to generate data, making it possible to achieve high returns using data collected
+from even a random policy. Furthermore, recent work has demonstrated the utility of world models
+_beyond maximizing return, such as generalizing to unseen variations in an environment (Ball et al.,_
+2021), transferring to new tasks (Yu et al., 2020), and learning with safety constraints (Argenson &
+Dulac-Arnold, 2021). Therefore, the case for MBRL in offline RL is clear: not only does it represent
+state-of-the-art in terms of performance, but it also provides the opportunity to maximize the signal
+in the offline data to generalize onto tasks beyond those encoded by the behavior policy. This is
+crucial for offline RL to be useful for real-world tasks (Dulac-Arnold et al., 2021), where there will
+inevitably be differences between the data and desired task.
+
+However, a common failure mode of MBRL is when policies exploit the model in parts of the
+state-action space where the model is inaccurate. Thus, naïve application of MBRL to offline data application of MBRL to offline data
+
+_[∗Joint first authors. Correspondence: cong.lu@stats.ox.ac.uk, ball@robots.ox.ac.uk](mailto:cong.lu@stat$
+
+
+-----
+
+10[1]
+
+10[0]
+
+
+
+Dynamics Error
+Max Aleatoric
+Max Pairwise Diff.
+Ensemble Std.
+Ensemble Var.
+
+
+0 25 50 75 100 P[Optimized > MOPO]
+
+Time Steps in Model
+
+Adroit
+
+MuJoCo
+
+0.4 0.5 0.6 0.7 0.8 0.9 1.0
+
+P[Optimized > MOPO]
+
+(a) Uncertainty vs. True Errors (b) Probability of Improvement
+
+Figure 1: a) The variation of different uncertainty penalties against true dynamics error during a model $
+of Hopper Medium-Expert. The canonical ensemble variance penalty most closely fits the true dynamics erro$
+**b) Tuning key hyperparameters (an approach we call Optimized) can lead to large gains over state-of-the$
+methods (MOPO) on the D4RL benchmark, as we show in this summary using rliable (Agarwal et al., 2021).
+
+can result in suboptimal performance. To prevent this, concurrent works (Yu et al., 2020; Kidambi
+et al., 2020) have approached the problem by training a policy in a pessimistic MDP (P-MDP). The
+P-MDP lower bounds the true MDP, and discourages the policy from regions where there is large
+discrepancy between the true and learned dynamics; this often provides a theoretical guarantee of
+improvement over cloning the behavior policy that generated the offline data. This is made practically
+possible by adding a penalty correlated with the uncertainty in the dynamics model. However, while
+these recent successes are similar in principle, in practice they differ in a series of design choices.
+First and foremost, they make use of different heuristics to measure model uncertainty, in some cases
+deviating from simpler metrics which are more consistent with the theory.
+
+In this paper, we conduct a rigorous investigation into a series of these design choices. We begin by
+focusing on the choice of uncertainty metric, comparing both recent state-of-the-art offline approaches
+(Kidambi et al., 2020; Yu et al., 2020; Rafailov et al., 2020) with additional metrics used in the online
+setting (Ball et al., 2020; Pan et al., 2020; Cowen-Rivers et al., 2022). We also explore the interaction
+with a series of other hyperparameters, such as the number of models and imaginary rollout length.
+Interestingly, the relationship between these variables and model uncertainty varies significantly
+depending on the choice of uncertainty penalty. Furthermore, we compare these uncertainty heuristics
+under new evaluation protocols that, for the first time, capture the specific covariate shift induced by
+model-based RL. This allows us to assess calibration to model exploitation in MBRL, observing that
+some existing penalties are surprisingly successful at capturing the errors in predicted dynamics, as
+seen in Fig. 1a (see App. D for details). Then, using the insights gained from sections 4 and 5, we
+then achieve a 43% gain over a previously grid-searched method by using a single hyperparameter
+value across all environments. We then jointly fine-tune our identified key variables using a powerful
+Bayesian Optimization algorithm (Wan et al., 2021) and find the simpler uncertainty measures can
+provide state-of-the-art results in continuous control offline benchmarks, and that the chosen optimal
+hyperparameters continue to align with our analysis. Finally, we rigorously confirm the aggregate
+improvement of our results using the rliable framework (Agarwal et al., 2021) in Fig. 1b, and
+show that the improvements over existing methods are significant (see App. H for details). This work
+is intended to benefit both researchers and practitioners in offline RL. Our main findings include:
+
