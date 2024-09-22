@@ -3,21 +3,27 @@ using g4ad.xlarge instance in EC2
 Amazon Instance Machine: ami-07f302d2a74e2b584(64-bit(x86))
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+conda create -n ai_scientist python=3.11
+conda init
+source ~/.bashrc 
+conda activate ai_scientist
 bash Miniconda3-latest-Linux-x86_64.sh
 cd miniconda3
 conda create -n pytorch_env python=3.9
-Downloaded github repository
-changed directory to repository
-conda create -n ai_scientist python=3.11
 conda activate ai_scientist
-sudo yum install texlive *Note this is different from the instructions
-sudo yum install git
 git clone https://github.com/SakanaAI/AI-Scientist.git
+sudo yum install texlive
 cd AI-Scientist
 pip install -r requirements.txt
-///***CRASH***\\\ Out of memeory
+export DEEPSEEK_API_KEY="YOUR KEY HERE"
+export S2_API_KEY="YOUR KEY HERE"
+git clone https://github.com/gregversteeg/NPEET.git
+cd NPEET
+pip install .
+pip install scikit-learn
+cd templates/2d_diffusion && python experiment.py --out_dir run_0 && python plot.py
+python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diffusion --num-ideas 2
 
-Google colab L4 GPU
 
 
 !pip install openai
