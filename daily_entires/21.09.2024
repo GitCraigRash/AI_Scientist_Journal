@@ -36,6 +36,55 @@ Found some videos on how to run Amazon Bedrock, and its very confusing because A
 9:56am
 It seems like bedrock does not use command lines at all. Which seems to contradict the set-up instructions for AI_Scientist. How do they expect me to store the program's files in this way?
 
+7:00pm
+Started to launch a instance on AWS with g4dn.xlarge instance. Installation is going smoothly until I try to install latax. It seems to be stuck...
+Installation finished. 
+
+7:40pm
+Working assigning the Deepseek_api_key. Following the rest of the isntructions to run 2d_diffusion
+git clone https://github.com/gregversteeg/NPEET.git
+cd NPEET
+pip install .
+pip install scikit-learn
+# Set up 2D Diffusion baseline run
+cd templates/2d_diffusion && python experiment.py --out_dir run_0 && python plot.py
+
+(ai_scientist) [root@ip-172-31-73-238 AI-Scientist]# cd templates/2d_diffusion && python experiment.py --out_dir run_0 && python plot.py
+Training model...
+Training model...
+Training model...
+Training model...
+
+7:51pm
+Hmmmm.... Did it do anything beside training? Checking files. No new latex files.  :(
+Lets see if there are more instructions... Executing next step:
+python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diffusion --num-ideas 2
+
+:D Generating Ideas!!!
+
+hmmm, I did not give it the Semantic Scolar API.. that may cause a problem.
+It is causing problems. I will stop the run, add the API, and restart.
+
+8:03pm
+Restarting.
+
+8:18pm
+I found a curiosity. While checking to see if the run had produced any papers, I went to the AI-Scientist/review_iclr_bench
+/iclr_parsed/ file and found that nearly every .txt file starting with "z" did not appear in the origional folder "iclr_parsed". Double checking their origin now.
+While searching, I found a bug in cmd + f while searching the AWS terminal. It only highlighted/found items within the field of view. While curious, it does not change the fact that items found in the new folder are not found in the old folder.
+
+
+zyrhwrd9EYs.txt
+zxEfpcmTDnF.txt
+zuqcmNVK4c2.txt
+zuDmDfeoB_1.txt
+zrW-LVXj2k1.txt
+zRJu6mU2BaE.txt
+zq1iJkNk3uN.txt
+ziRLU3Y2PN_.txt
+zbZL1s-pBF.txt
+zaALYtvbRlH.txt
+zz9hXVhf40.txt
 
 5. Results:
 
