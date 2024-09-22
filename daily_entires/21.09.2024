@@ -106,6 +106,10 @@ Spent an aggregious amount of time trying to use to terminal to download the fil
 
 
 5. Results:
-
+Amazon EC2 is working!
+I have yet to determine if these text files are new papers. But what is certain is that they do not appear in the origional program example papers. 
 
 6. Next Steps:
+Determine if the text files are origional. 
+Find the way to transform them into latex. 
+Modify code to research AI alignment.
