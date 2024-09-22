@@ -1,8 +1,11 @@
 Sept 10 2024
 using g4ad.xlarge instance in EC2
-That failed. Using a free isntance of unknown kind now
+Amazon Instance Machine: ami-07f302d2a74e2b584(64-bit(x86))
 
-Downloaded miniconda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+cd miniconda3
+conda create -n pytorch_env python=3.9
 Downloaded github repository
 changed directory to repository
 conda create -n ai_scientist python=3.11
