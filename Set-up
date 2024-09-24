@@ -3,11 +3,12 @@ using g4ad.xlarge instance in EC2
 Amazon Instance Machine: ami-07f302d2a74e2b584(64-bit(x86))
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+cd miniconda3
 conda create -n ai_scientist python=3.11
 conda init
 source ~/.bashrc 
 conda activate ai_scientist
-bash Miniconda3-latest-Linux-x86_64.sh
 cd miniconda3
 conda create -n pytorch_env python=3.9
 conda activate ai_scientist
@@ -15,15 +16,31 @@ git clone https://github.com/SakanaAI/AI-Scientist.git
 sudo yum install texlive
 cd AI-Scientist
 pip install -r requirements.txt
-export DEEPSEEK_API_KEY="YOUR KEY HERE"
+export ANTHROPIC_API_KEY="YOUR KEY HERE"
 export S2_API_KEY="YOUR KEY HERE"
 git clone https://github.com/gregversteeg/NPEET.git
 cd NPEET
 pip install .
 pip install scikit-learn
+cd ..
 cd templates/2d_diffusion && python experiment.py --out_dir run_0 && python plot.py
-python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diffusion --num-ideas 2
+pip install -r requirements.txt
 
+DECIDE
+python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diffusion --num-ideas 1
+OR
+python launch_scientist.py --model "claude-3-5-sonnet-20240620" --experiment 2d_diffusion --num-ideas 5
+
+
+scp -i ~/Downloads/AI_SCI_13.pem -r ec2-user@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion ~/Downloads/
+
+craigrashjr@Craig-Rash-Jrs-MacBook-Air ~ % scp -i AI_SCI_13.pem -r CMRJ_AWS@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion .           
+Warning: Identity file AI_SCI_13.pem not accessible: No such file or directory.
+CMRJ_AWS@44.221.87.91: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
+scp: Connection closed
+craigrashjr@Craig-Rash-Jrs-MacBook-Air ~ % 
+
+scp -i ~/Downloads/AI_SCI_13.pem -r CMRJ_AWS@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion .
 
 
 !pip install openai
