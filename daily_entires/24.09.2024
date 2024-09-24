@@ -49,6 +49,21 @@ Searched Kaggle and Github. Found this site: https://github.com/dit7ya/awesome-a
 
 5:36pm
 Continuing the search for AI alignment testing code...
+Very little is coming up on google, Chat, and Github. I may either make my own or look into other topcis. 
+For AI Alignment, my requirements will vary depending on what subtopic I am looking into. 
+1. Chatbot Assistant safty 2. Text to image safty. 3. Image to text safety 4. Malicous
+
+Possible Alignment problems: 
+Pursues long-term, real-world goals, different from those supplied by the developer or user
+(Chan et al., 2023; Ngo et al., 2022);
+• Engages in “power-seeking” behaviours (Krakovna and Kramar, 2023; Turner et al., 2021);
+• Resists being shut down (Hadfield-Menell et al., 2016; Orseau and Armstrong, 2016);
+• Can be induced into collusion with other AI systems against human interests (Ngo et al., 2022).
+• Resists malicious users’ attempts to access its dangerous capabilities (Glaese et al., 2022).
+
+6:27pm
+Started working on a new repository to house my AI alignment code. I am thinking of allowing the LLM to modify the In Context Learning for test questions. 
+
 
 
 5. Results:
