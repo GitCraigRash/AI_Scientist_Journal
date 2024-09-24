@@ -1,0 +1,81 @@
+Date: 23.09.2024
+Time: 5:10AM EST
+
+1. Goal:
+
+2. Thought Behind the Goal:
+
+3. Proposed Process:
+
+4. Actions Taken:
+I just saw this while looking at the origional github respoistory for AI_Scientist:
+Sorry, we had to truncate this directory to 1,000 files. 19 entries were omitted from the list. Latest commit info may be omitted.
+So, likely the .txt files already existed.
+
+*last night 8:57pm 
+Novalty is a requirement for the program to write a paper! 
+Proof:
+ai_scientist/launch_scientist.py
+novel_ideas = [idea for idea in ideas if idea["novel"]]
+    ...
+for idea in novel_ideas:
+            print(f"Processing idea: {idea['Name']}")
+            try:
+                success = do_idea(
+                    base_dir,
+                    results_dir,
+                    idea,
+                    args.model,
+                    client,
+                    client_model,
+                    args.writeup,
+                    args.improvement,
+                )
+                print(f"Completed idea: {idea['Name']}, Success: {success}")
+
+
+The ideas I have been generating are not novel.
+Trying to generate more papers. (10)
+python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diffusion --num-ideas 10
+
+
+11:23am 
+After sucessfully downloading the files. I can see that the program worked on a latax paper in the sense it made edits and iteritivly improved, but the actual .pdf document does not exist. nor does the text for the pdf document. It's very strange.
+I am tempted to try to activate the latex writing function from the command line to see if it works. 
+
+12:24pm 
+After some experumentation it seem sthat I cannot activate the generate_latex method from the command line. Why? But I should switch tactics. Now I am working on getting bringing the file up on visual studio and using the command line there to get it to run. 
+Evidently I cannot just command the computer to run a method. But what I can do is create a new python file that will run the comamnd I want it to. then run that file. 
+
+2:00pm
+the python file method is not working as I hoped. I am not sure how to create a latex file. 
+I will keep adding lirbaries as they are needed. Maybe that will solve the problem. 
+
+3:55pm
+I noticed that all I may need to change is the name of the file the command is looking for.
+8:14PM
+The program sucessfully checks if the papers are on semantic scholar! but now it's failing because it cannot find a specific file. 
+"""Processing idea: controllable_generation
+Failed to evaluate idea controllable_generation: [Errno 2] No such file or directory: 'templates/2d_diffusion/run_0/final_info.json'
+All ideas evaluated."""
+The code is asking: """assert not osp.exists(folder_name), f"Folder {folder_name} already exists." """
+But instead of creating the file, the program goes simply says failed to evaluate. Implying that the final_results.json should already exist. 
+Solution: I am going to try to run:
+cd templates/2d_diffusion && python experiment.py --out_dir run_0 && python plot.py
+It may be that this line generates the files necessary. 
+
+8:30pm
+Edited my instance to run Claude Sonnet 3.5 Ran into some problems when it could not find it's own files...
+
+8:50
+While the program is executing, I will look into how I can make the Scientist to research alignment. My idea is to give it certain data to alter and change with functions that allow it to run api commands to other AI's for evaluation.
+I will need :
+Context Prompts - strings that always preceed the user's request
+User Prompts - strings of general and safety questions
+api keys - access to ai models for prompting and evaluation
+functions - Talking to models, formatting strings, 
+
+5. Results:
+
+6. Next Steps:
+
