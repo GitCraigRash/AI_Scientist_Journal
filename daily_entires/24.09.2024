@@ -64,6 +64,33 @@ Pursues long-term, real-world goals, different from those supplied by the develo
 6:27pm
 Started working on a new repository to house my AI alignment code. I am thinking of allowing the LLM to modify the In Context Learning for test questions. 
 
+7:06pm
+Wrote the processes I will need to implement and the setup code: 
+requirements.txt
+  accelerate
+  bitsandbytes
+  transformers
+  torch
+  datasets
+  requests
+  openai --upgrade
+
+Process:
+1. Get prompts from internet.
+    a. export API keys
+2. Combine Context and prompt for Llama-2-7b base
+3. Ready prompt for Llama-2-7b-chat
+4. Send to Llama-2-7b-base and Llama-2-7b-chat
+5. Recieve the json back. 
+6. Extract the response
+7. Format the response
+8. Send to Chat GTP3(or else a very intelligent LLM)
+9. Extract response 
+10. Format to send to GTP3(or else a very intelligent LLM) for evaluation
+11. Extract response and format to json file for Dataframe and Radial chart
+
+7:48pm
+Modifying the API call to use DEEPSEEK instead of Llama-2-7b. Once finished I plan to add the Prompts and functions to combine context and prompt. 
 
 
 5. Results:
