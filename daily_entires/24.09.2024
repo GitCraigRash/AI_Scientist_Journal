@@ -1,0 +1,46 @@
+Date: 24.09.2024
+Time: 8:37AM EST
+
+1. Goal:
+Get AI to gernerate Latex papers. 
+  Identify prerequisits
+  Execute instructions or fixes
+  
+Find AI Alignment papers to use as experumental templets.
+Get AI to generate AI alignment papers.
+  
+  
+2. Thought Behind the Goal:
+  
+3. Proposed Process:
+
+4. Actions Taken:
+9:00am
+Move Cloude 3.5 results to s3 bucket.
+
+9:20am
+Struggling with the credentials. Even though I created and assigned new keys, uploads are failing because permissions are denied.
+
+9:40am
+Was able to move data to S3, now trying to get it onto local.
+
+10:09am
+Still strugggling to get permissions to donwload the files...
+
+11:26am
+Still no progress. 
+
+11:40am
+Got the files downloaded!
+I will switch to looking for ways to implement instead of tyring to create the latex. 
+
+12:00 
+took a walk and ate lunch
+
+12:52
+
+
+
+5. Results:
+
+6. Next Steps:
