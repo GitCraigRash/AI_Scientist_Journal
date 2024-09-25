@@ -102,7 +102,12 @@ Still on API call functionallity...
 9:07pm
 I am now realizing that Deepseek is probably an alined AI as it's name is deepseek-chat. I also need a base model in order t odetermin the sucessfulness of URIAL instruction.
 
-5. Results:
+9:32pm
+Thinking about it now, I am realizing that it may be better to download and run the models on Amazon EC2 instances because API's for base models are impossible to find. I could not find the Llama2-7b model supported anywhere. 
 
+5. Results:
+I know how to generate new ideas using AI-Scientist. 
 
 6. Next Steps:
+Now I need to adapt AI-Scientist to study a topic of my choosing. Likely AI Alignment, but if that proves infeasable, then I can find another topic. 
+Tomorrow I hope to use Replicate API to call the Llama-2-7b base model.
