@@ -93,6 +93,15 @@ Process:
 Modifying the API call to use DEEPSEEK instead of Llama-2-7b. Once finished I plan to add the Prompts and functions to combine context and prompt. 
 
 
+8:08pm
+Continuing to add the API call functionallity..
+
+8:51pm
+Still on API call functionallity...
+
+9:07pm
+I am now realizing that Deepseek is probably an alined AI as it's name is deepseek-chat. I also need a base model in order t odetermin the sucessfulness of URIAL instruction.
+
 5. Results:
 
 
