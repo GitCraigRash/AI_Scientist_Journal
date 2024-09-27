@@ -1,0 +1,12 @@
+1. Goal
+  Finish API call function for Base Llama 3**
+  Finish API call for Llama 3 Chat
+  Connect the experument.py to the rest of the program by having the AI call commands that prompt the next steps. 
+  **Base Llama 3 may only be available as a download and not API. 
+  
+2. Thoughts behind the goal
+  I need to determine how the program will execute itself if Llama3 is restricted to a download. It shoulds til be possible, but much more difficult to implement. I would have to code the computer to start a EC2 isntance from scratch bc my comptuer is not large enoughf or the model. 
+  I will need to think about how the AI should be able to prompt the next steps, specifically what they are and what parameters they come with. 
+
+3. Actions taken
+  6:44am
