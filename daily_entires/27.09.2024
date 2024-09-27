@@ -10,3 +10,9 @@
 
 3. Actions taken
   6:44am
+  Look slike I may be easily able to download and use dolphin llama3, the question is how can I do it effectivly? I am worried that my cost will skyrocket if I start using lots of models and cloud hosting to test its capabilities. I could test it by using a smaller model on my own machine. That will eliminate the cost of an API and cloud compute. The difficulty may be with the chat version which will likely be much bigger. Another problem could be that I may not be able to find a small, base version of the model and a small chat version of the same model.
+
+  7:00am
+  Some potential posisbliites appear. It seems there are Llama-8B and Dolphin-Llama3-8B as my options. 
+  Another question I thought of is how many options should I give the program? I would imagion the idea would be as many as possible to inspire creativity. 
+  Another problem might be that there may not be enough academic literature on this topic for AI to make good guesses. But perhaps the AI will be better than me at finding relevant information.
