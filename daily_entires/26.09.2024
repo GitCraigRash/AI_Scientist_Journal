@@ -1,0 +1,28 @@
+Date: 17.09.2024
+Time: 8:41AM EST
+
+1. Goal:
+  To produce Latex Paper by repeatedly using generate_markup.py on paper
+  To set up AI-Scientist to perfrom Alignment.
+    Add functions to format data
+    Add functions to call API's. Specifically, Llama3.2 where approrpate.
+  Answer question : In what way will AI be able to adjust the parameters of the project?
+
+2. Thought Behind the Goal:
+  The program needs responses from it's tests in order to get results from it's modifications. 
+  By having a hypothosis of the AI's behavior, I can more easily falsify my understanding of the program. 
+  
+
+3. Proposed Process:
+  Modify the code from my previous project to run on this program.
+
+4. Actions Taken:
+  7:20am
+    Set up. Opening aascientist and Functions.ipynb to transfer and modify functions.
+    Spent most of the time asking Chat if there was any way to increase efficiencey fo my process.
+  7:40am
+    REading about Llama3.2 #Self note: fine-tuning (SFT), rejection sampling (RS), and direct preference optimization (DPO).
+
+5. Results:
+
+6. Next Steps:
