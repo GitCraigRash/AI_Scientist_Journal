@@ -21,7 +21,8 @@
     I have determined that running the model localy is infeasable without a heafty computer purchase, rather I should download them onto an instance and run everything in a short amount of time. 
     The steps would have to be: Prep the environment, download model, run questions, delete model, donwload chat model , run qeustions delete model. Send batch request to Llama3.2 to get response.
     However, if we can have a large enough storage space, we could house both models and preserve between runs. 
-    How much space do I need? 
-    
+    Although, if I can API a Llama3 chat model and only have the base dolphin Llama3 on my machine, I can still avoid re-downloading between runs. 
+
+    Question: How will the Scientist be able to innovate? 
     
   
