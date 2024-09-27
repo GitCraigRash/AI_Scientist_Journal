@@ -21,8 +21,11 @@ Time: 8:41AM EST
     Set up. Opening aascientist and Functions.ipynb to transfer and modify functions.
     Spent most of the time asking Chat if there was any way to increase efficiencey fo my process.
   7:40am
-    REading about Llama3.2 #Self note: fine-tuning (SFT), rejection sampling (RS), and direct preference optimization (DPO).
+    Reading about Llama3.2 #Self note: fine-tuning (SFT), rejection sampling (RS), and direct preference optimization (DPO).
+
+  5:00pm
+Look for base Llama model. Found that the dolphin-Llama model is unalingned and can be used as a starting base. 
 
 5. Results:
-
+  
 6. Next Steps:
