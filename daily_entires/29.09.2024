@@ -2,11 +2,12 @@
   To define how much freedom the AI - Scientist has to change the experument set up and to give it as much as necessary for its creativity to be meaningful.
 
 2. Thoughts behind goal
-  
+  By now ing what elements the Scientist had control over, I can more reliably produce the papers. 
 3. Proposed processes
   List items the AI Scientist had access to in the example build and implement them in my own build. 
 
-  Item found: 
+4. Actions taken
+   Item found: 
     The parameters and meta-parameters model itself. 
     The ability to add noise to the datasets.
     The optimizer parameters
@@ -14,10 +15,17 @@
     The ability to change the code that records the results.
     it can change the commands that set the parameters to the experement.py calls. 
 
-    How the model 
-    
-4. Actions taken
-  
+  7:26am
+  Now I need to see how I can get the Scientist to chage the aprameters for dolphin Llama 3
+
+  7:43am
+  Working on adapting experement.py to download dolphin Llama3, set it's parameters, run experement, then call Llama3 API
+
+  8:08am
+    Found several parameters for the Scientist to alter. Now working on adding the code to download the model, tokenizer and the code to run the API
+
+
+
 5. Results
   
 6. Next Steps
