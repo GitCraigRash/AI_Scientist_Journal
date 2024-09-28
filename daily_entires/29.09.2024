@@ -5,7 +5,17 @@
   
 3. Proposed processes
   List items the AI Scientist had access to in the example build and implement them in my own build. 
-  
+
+  Item found: 
+    The parameters and meta-parameters model itself. 
+    The ability to add noise to the datasets.
+    The optimizer parameters
+    The progress bar.
+    The ability to change the code that records the results.
+    it can change the commands that set the parameters to the experement.py calls. 
+
+    How the model 
+    
 4. Actions taken
   
 5. Results
