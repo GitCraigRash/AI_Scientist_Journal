@@ -24,7 +24,81 @@
     Although, if I can API a Llama3 chat model and only have the base dolphin Llama3 on my machine, I can still avoid re-downloading between runs. 
 
     Question: How will the Scientist be able to innovate? 
-    
+
+
+  7:00am
+  Some potential posisbliites appear. It seems there are Llama-8B and Dolphin-Llama3-8B as my options. 
+  Another question I thought of is how many options should I give the program? I would imagine the idea would be as many as possible to inspire creativity. 
+  Another problem might be that there may not be enough academic literature on this topic for AI to make good guesses. But perhaps the AI will be better than me at finding relevant information.
+
+  7:53am
+    I have determined that running the model localy is infeasable without a heafty computer purchase, rather I should download them onto an instance and run everything in a short amount of time. 
+    The steps would have to be: Prep the environment, download model, run questions, delete model, donwload chat model , run qeustions delete model. Send batch request to Llama3.2 to get response.
+    However, if we can have a large enough storage space, we could house both models and preserve between runs. 
+    Although, if I can API a Llama3 chat model and only have the base dolphin Llama3 on my machine, I can still avoid re-downloading between runs. 
+
+    Question: How will the Scientist be able to innovate? 
+
+  11:54am
+    Gathered a brianstorm of Alignment strateiges: 
+      Value Learning
+      Reward Modeling
+      Inverse Reinforcement Learning (IRL)
+      Human Feedback Integration
+      Corrigibility
+      Interpretability and Explainability
+      Robustness to Distributional Shifts
+      
+      Fairness and Bias Mitigation
+      Scalable Oversight
+      Multi-Agent Alignment
+      Preference Aggregation
+      Ethical Frameworks Integration
+      Norm Learning
+      AI Governance and Policy
+      
+      Safety-Critical AI Design
+      Long-Term Goal Alignment
+      Value Drift Prevention
+      Deceptive Behavior Detection
+      Uncertainty Handling
+      Collaborative AI
+      AI Ethics Education
+      
+      Adversarial Robustness
+      Human-AI Interaction Design
+      Value Alignment Benchmarks
+      Meta-Learning for Alignment
+  Now I exploring which or more of these candidates are the best field of study for it. 
+
+The goal is to get AI scientist to study AI alignment. I thereforee need to give it material a problem and general tools to work with and general metrics to report.  Now what material can I provide it?
+
+1. Text dataset
+  Goals: Avoid answering malicous queries while remaining helpful.
+  Filter false information 
+  Detect if you are being manipulated. 
+  
+
+2. Numbers Dataset
+  Pros:
+    test for bias
+
+2. Simple game
+ 1. An agent working with a simulated human.
+ 2. An agent working with mulitple agents. 
+ 3. 
+
+Perhaps it is better if I give the agent a goal, and then it must explore strategies to find a way to reach that goal. 
+
+3:40pm
+Asked Chat to give me goals and datasets... Looking through them now. 
+How easy would it be for me to procure high quality real life datasets?
+Which of these would be satisfactory for research purposes to create a synthetic dataset?
+Which of these are the least understood?
+
+4:47pm
+After reviewing the options I believe it would be easier to work with the dataset from my previous project. I do not see any inherent advantage switching datasets and AI goals can give me. 
+Now I must decide what to do next. The 
 5.⁠ ⁠Results:
   After exploring alternatives, I will continue to implement the Scientist to study chatbox safty alignment. 
 
