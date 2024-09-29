@@ -1,0 +1,22 @@
+Date: 17.09.2024
+Time: 8:41AM EST
+
+1. Goal:
+Finish the code that allows the Scientist to modify the context, prompt, the prompted model's parameters.
+
+  
+2. Thought Behind the Goal:
+Provisioning this code for the Scientist will allow it to adapt theses parameters in creative ways. Ideally, we want as many as possible. 
+
+3. Proposed Process:
+I will write code that should be able to preform an experiment and measure the results. This should be sufficient for the AI to run and modify the experument.
+I will be looking up dophin llama3 parameters and using Chat to complete the goal in a timely manner. 
+
+4. Actions Taken:
+7:11am
+
+
+5. Results:
+
+
+6. Next Steps:
