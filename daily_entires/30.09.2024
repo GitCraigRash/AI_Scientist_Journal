@@ -10,13 +10,23 @@ Creation Time: 6:36AM EST
   
 3. Proposed Process and Potential challenges:
   The experument.py will need to be called by ___ (run_experument()?).
-The program must then be able to adjust any portion of the experument including changing libraries, adding functions, and parameters.
-The program saves information to a json file called final_info.json and all_resutls.pkl
-There should be a seperate file that creates plots from results. 
+  The program must then be able to adjust any portion of the experument including changing libraries, adding functions, and parameters.
+  The program saves information to a json file called final_info.json and all_resutls.pkl
+  There should be a seperate file that creates plots from results. 
 
 4. Actions Taken:
+  Adjust the json payload given to the Dolphin-Llama3 model.
   
+9:58am
+  I noticed the ask_questions() function needs to be adjusted. Currently it thinks that it's going to send an API call, but rather it just needs to call the model running locally. 
+
+11:00am
+Experiment.py no long re-downloads the model every run. 
+Evaluation function now connects to Llama3.2-3b
   
+11:23am
+Will now make sure the json for Llama3.2 API is correctly formatted. 
+
 5. Results:
 
 6. Next Steps:
