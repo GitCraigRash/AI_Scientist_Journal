@@ -26,6 +26,7 @@ Evaluation function now connects to Llama3.2-3b
 Will now make sure the json for Llama3.2 API is correctly formatted. 
 
 3:13pm
+Decided to avoid using the functions in the API call for simplicity.
 
 
 5. Results:
