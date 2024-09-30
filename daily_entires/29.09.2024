@@ -1,4 +1,4 @@
-Date: 17.09.2024
+Date: 29.09.2024
 Time: 8:41AM EST
 
 1. Goal:
@@ -16,8 +16,17 @@ I will be looking up dophin llama3 parameters and using Chat to complete the goa
 7:11am
 Looking up what tokenizer the Llama3 will need. During this time I remembered that doplhin-Llama3 will need Docker installed. Taking note...
 
+8:37pm
+Added code to check to see if dolphin Llama3 was downloaded. if it was the download is skipped. 
+Now looking to see if the program can be completed as is or if it needs addtional steps , metrics, given to finish a run of tests.
+
+8:51pm 
+Functions that gather responses should now work in any EC2 instance.
+
 
 5. Results:
-
+My Experument.py should now work in any EC2 instance.
+Added coded that checked inf AI model was actually installed, then proceeded with program. 
 
 6. Next Steps:
+Make just_evalaccessable to the program.
