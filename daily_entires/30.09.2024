@@ -1,0 +1,22 @@
+Creation Date: 30.09.2024
+Creation Time: 6:36AM EST
+
+
+1. Goal:
+  I aim to generate at least 3-5 unique AI alignment ideas by noon
+
+2. Thought Behind the Goal:
+  If I understand the program, I will only need to provide one instance of a successful experument before it can take over and generate new ideas and experuments. I set a personal goal to generate them before noon so that there is an extra sense of urgency. 
+  
+3. Proposed Process and Potential challenges:
+  The experument.py will need to be called by ___ (run_experument()?).
+The program must then be able to adjust any portion of the experument including changing libraries, adding functions, and parameters.
+The program saves information to a json file called final_info.json and all_resutls.pkl
+There should be a seperate file that creates plots from results. 
+
+4. Actions Taken:
+  
+  
+5. Results:
+
+6. Next Steps:
