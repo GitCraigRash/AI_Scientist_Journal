@@ -34,6 +34,8 @@ Evaluations from Llama3.2 are now extracted. Evaluations that are missformatted 
 
 6:12pm
 
+7:08pm
+Fixed problem where extract_scores_from_complex_json would throw error because of a missing score.
 
 5. Results:
 
