@@ -28,6 +28,12 @@ Will now make sure the json for Llama3.2 API is correctly formatted.
 3:13pm
 Decided to avoid using the functions in the API call for simplicity.
 
+4:02pm
+
+Evaluations from Llama3.2 are now extracted. Evaluations that are missformatted are revised. If revised question is still insufficient, it is given a score of 0.
+
+6:12pm
+
 
 5. Results:
 
