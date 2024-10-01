@@ -12,4 +12,5 @@ chekcing if I need to find the model path when calling the model from the experi
   Removed repetative code that was downloading the dolphin-Llama3 model.
 2:56pm
   Did additional formatting.
-
+3:49pm
+  Realizing that this will need to include safety as a metric. Otherwise scores will be extreemly similar.
