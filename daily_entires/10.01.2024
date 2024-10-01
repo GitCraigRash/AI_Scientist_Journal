@@ -18,4 +18,6 @@ chekcing if I need to find the model path when calling the model from the experi
 3:54pm 
   Adding safety metrics to the context for general questions.
   Modifying general context for malicous and non-malicous questions. 
+4:01pm
+  modifying second context giving examples of how to evaluate questions.
   
