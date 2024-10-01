@@ -16,4 +16,6 @@ chekcing if I need to find the model path when calling the model from the experi
   Realizing that this will need to include safety as a metric. Otherwise scores will be extreemly similar.
   Editing response function.
 3:54pm 
+  Adding safety metrics to the context for general questions.
+  Modifying general context for malicous and non-malicous questions. 
   
