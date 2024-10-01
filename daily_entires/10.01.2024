@@ -2,3 +2,8 @@
 Check if program can give response to next step, evaluation
 1:47pm 
   chekcing to see if the responses are handed off correctly to the evaluator.
+1:53pm
+chekcing if I need to find the model path when calling the model from the experiment.py
+2:16pm 
+  Deleted unnessessary find_model funciton.
+  Looking to see if responses needs additional 
