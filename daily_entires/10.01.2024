@@ -1,3 +1,4 @@
+
 12:47pm
 Check if program can give response to next step, evaluation
 1:47pm 
@@ -6,4 +7,8 @@ Check if program can give response to next step, evaluation
 chekcing if I need to find the model path when calling the model from the experiment.py
 2:16pm 
   Deleted unnessessary find_model funciton.
-  Looking to see if responses needs additional 
+  Looking to see if evaluation function needs it's placeholder objects replaced.
+2:33pm
+  Removed repetative code that was downloading the dolphin-Llama3 model.
+2:56pm
+  
