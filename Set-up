@@ -32,6 +32,13 @@ python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diff
 OR
 python launch_scientist.py --model "claude-3-5-sonnet-20240620" --experiment 2d_diffusion --num-ideas 5
 
+### Download files from E3
+
+sudo yum update -y
+sudo yum install awscli -y
+aws configure
+python your_script.py 20240924_003639_biased_noise_generation/ bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
+
 
 scp -i ~/Downloads/AI_SCI_13.pem -r ec2-user@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion ~/Downloads/
 
