@@ -32,21 +32,24 @@ python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diff
 OR
 python launch_scientist.py --model "claude-3-5-sonnet-20240620" --experiment 2d_diffusion --num-ideas 5
 
-### Download files from E3
 
+### Download files from E3
 sudo yum update -y
 sudo yum install awscli -y
 aws configure
-
 aws s3 cp s3://aiscibucket2/ ~/AI-Scientist/results --recursive
 
+
 ### Run perform_writeup.py
+
+
+conda activate ai_scientist
 pip install -U aider-chat
 pip install backoff
 pip install openai
 pip install aider
 pip install requests
-conda activate ai_scientist
+
 python -m ai_scientist.perform_writeup "20240924_013945_denoising_trajectory_analysis" bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
 
 
