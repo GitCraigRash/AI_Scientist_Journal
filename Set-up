@@ -38,13 +38,14 @@ sudo yum update -y
 sudo yum install awscli -y
 aws configure
 
+aws s3 cp s3://bucket-name/path/to/folder ~/AI-Scientist/results --recursive
+ 
+### Run perform_writeup.py
+
 pip install backoff
 pip install openai
 pip install aider
 conda activate ai_scientist
-aws s3 cp s3://bucket-name/path/to/folder ~/AI-Scientist/results --recursive
- 
-### Run perform_writeup.py
 python -m ai_scientist.perform_writeup --folder "20_biased_noise_generation/" --model bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
 
 
