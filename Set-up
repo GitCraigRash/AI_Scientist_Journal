@@ -39,7 +39,7 @@ sudo yum install awscli -y
 aws configure
 
 aws s3 cp s3://bucket-name/path/to/folder ~/AI-Scientist/results --recursive
- 
+
 ### Run perform_writeup.py
 
 pip install backoff
