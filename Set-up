@@ -42,7 +42,7 @@ pip install backoff
 pip install openai
 pip install aider
 conda activate ai_scientist
-aws s3 cp s3://aiscibucket2/root/2d_diffusion /root/miniconda3/AI-Scientist/results --recursive
+aws s3 cp s3://aiscibucket2/root/2d_diffusion/ /root/miniconda3/AI-Scientist/results --recursive
  
 
 
