@@ -45,6 +45,7 @@ aws s3 cp s3://bucket-name/path/to/folder ~/AI-Scientist/results --recursive
 pip install backoff
 pip install openai
 pip install aider
+pip install requests
 conda activate ai_scientist
 python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
 
