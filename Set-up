@@ -41,13 +41,16 @@ aws configure
 aws s3 cp s3://aiscibucket2/ ~/AI-Scientist/results --recursive
 
 ### Run perform_writeup.py
-
+pip install -U aider-chat
 pip install backoff
 pip install openai
 pip install aider
 pip install requests
 conda activate ai_scientist
 python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
+
+
+
 
 
 scp -i ~/Downloads/AI_SCI_13.pem -r ec2-user@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion ~/Downloads/
