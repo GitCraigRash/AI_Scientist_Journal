@@ -41,8 +41,7 @@ aws s3 cp s3://aiscibucket2/ ~/AI-Scientist/results --recursive
 
 
 ### Run perform_writeup.py
-
-
+cp -r /root/miniconda3/AI-Scientist/results/2d_diffusion/20240924_013945_denoising_trajectory_analysis /root/miniconda3/AI-Scientist
 conda activate ai_scientist
 pip install -U aider-chat
 pip install backoff
