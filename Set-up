@@ -37,7 +37,8 @@ python launch_scientist.py --model "claude-3-5-sonnet-20240620" --experiment 2d_
 sudo yum update -y
 sudo yum install awscli -y
 aws configure
-aws s3 cp s3://aiscibucket2/ ~/AI-Scientist/results --recursive
+mkdir results
+aws s3 cp s3://aiscibucket2/ /root/miniconda3/AI-Scientist/results --recursive
 
 
 ### Run perform_writeup.py
@@ -48,8 +49,10 @@ pip install backoff
 pip install openai
 pip install aider
 pip install requests
+### edit 
 
-python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model anthropic.claude-3-5-sonnet-20240620-v1:0
+
+python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model vertex_ai/claude-3-5-sonnet@20240620
 
 
 
