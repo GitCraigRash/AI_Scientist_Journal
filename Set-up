@@ -51,8 +51,8 @@ pip install aider
 pip install requests
 ### edit 
 
-
-python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model vertex_ai/claude-3-5-sonnet@20240620
+pip install boto3
+python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model anthropic.claude-3-5-sonnet-20240620-v1:0
 
 
 
