@@ -525,7 +525,7 @@ if __name__ == "__main__":
         type=str,
         default="gpt-4o-2024-05-13",
         choices=[
-            "claude-3-5-sonnet-20240620",
+            "anthropic.claude-3-5-sonnet-20240620-v1:0",
             "gpt-4o-2024-05-13",
             "deepseek-coder-v2-0724",
             "llama3.1-405b",
