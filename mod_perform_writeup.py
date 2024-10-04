@@ -543,17 +543,17 @@ if __name__ == "__main__":
         help="Model to use for AI Scientist.",
     )
     args = parser.parse_args()
-    if args.model == "claude-3-5-sonnet-20240620":
+    if args.model == "anthropic.claude-3-5-sonnet-20240620":
         import anthropic
 
         print(f"Using Anthropic API with model {args.model}.")
-        client_model = "claude-3-5-sonnet-20240620"
+        client_model = "anthropic.claude-3-5-sonnet-20240620"
         client = anthropic.Anthropic()
-    elif args.model.startswith("bedrock") and "claude" in args.model:
+    elif args.model.startswith("anthropic") and "claude" in args.model:
         import anthropic
 
         # Expects: bedrock/<MODEL_ID>
-        client_model = args.model.split("/")[-1]
+        #client_model = args.model.split("/")[-1]
 
         print(f"Using Amazon Bedrock with model {client_model}.")
         client = anthropic.AnthropicBedrock()
