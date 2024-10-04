@@ -49,7 +49,7 @@ pip install openai
 pip install aider
 pip install requests
 
-python -m ai_scientist.perform_writeup "20240924_013945_denoising_trajectory_analysis" bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
+python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model bedrock/anthropic.claude-3-sonnet-20240229-v1:0
 
 
 
