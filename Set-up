@@ -86,6 +86,7 @@ DEEPSEEK_API_KEY = userdata.get('DEEPSEEK_API_KEY')
 !pip install .
 
 
+aws s3 cp /root/miniconda3 s3://aiscibucket1/ --recursive
 
 !cd templates/nanoGPT && python experiment.py --out_dir run_0 && python plot.py
 
