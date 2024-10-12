@@ -1,3 +1,5 @@
 Differential Transformers
 
-Instead of a signle head, they have multiple heads that divide up the query, key and values and perform a softmax on both before subtracting them. This magically makes the most improtant tokens stand out. My question is: How do they divide up the query, keys, and values?
+Instead of a single head, they have multiple heads that divide up the query, key and values and perform a softmax on both before subtracting them. This magically makes the most improtant tokens stand out. My question is: How do they divide up the query, keys, and values?
+
+Otherwise, the rest of the paper seems to be explianing the benifits of the new method or exactly how the method works. However, itn the appendix it does show a proof that the Differential Transformer can use the exact same parameters as a traditional transformer without losing information. That is huge because not only are the processees easily measured, but my guess is that re-training does not have to be done. 
