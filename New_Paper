@@ -1,1 +1,3 @@
 Differential Transformers
+
+Instead of a signle head, they have multiple heads that divide up the query, key and values and perform a softmax on both before subtracting them. This magically makes the most improtant tokens stand out. My question is: How do they divide up the query, keys, and values?
