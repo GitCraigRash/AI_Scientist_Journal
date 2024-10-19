@@ -52,9 +52,6 @@ pip install boto3
 python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_trajectory_analysis" --model claude-3-5-sonnet-20240620
 
 
-
-
-
 scp -i ~/Downloads/AI_SCI_13.pem -r ec2-user@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion ~/Downloads/
 
 scp -i ~/Downloads/AI_SCI_13.pem -r CMRJ_AWS@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion .
