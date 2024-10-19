@@ -27,9 +27,6 @@ cd templates/2d_diffusion && python experiment.py --out_dir run_0 && python plot
 cd ..
 cd ..
 
-DECIDE
-python launch_scientist.py --model "deepseek-coder-v2-0724" --experiment 2d_diffusion --num-ideas 1
-OR
 python launch_scientist.py --model "claude-3-5-sonnet-20240620" --experiment 2d_diffusion --num-ideas 5
 
 
