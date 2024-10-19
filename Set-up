@@ -57,12 +57,6 @@ python -m ai_scientist.perform_writeup --folder "20240924_013945_denoising_traje
 
 scp -i ~/Downloads/AI_SCI_13.pem -r ec2-user@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion ~/Downloads/
 
-craigrashjr@Craig-Rash-Jrs-MacBook-Air ~ % scp -i AI_SCI_13.pem -r CMRJ_AWS@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion .           
-Warning: Identity file AI_SCI_13.pem not accessible: No such file or directory.
-CMRJ_AWS@44.221.87.91: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).
-scp: Connection closed
-craigrashjr@Craig-Rash-Jrs-MacBook-Air ~ % 
-
 scp -i ~/Downloads/AI_SCI_13.pem -r CMRJ_AWS@44.221.87.91:/root/miniconda3/AI-Scientist/results/2d_diffusion .
 
 
